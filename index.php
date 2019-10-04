@@ -23,7 +23,7 @@ include 'inc/functions.php';
     <div id="quote-box">
       <?php echo printQuote();?>
     </div>
-    <button id="loadQuote" onclick="timer" >Show another quote</button>
+    <button id="loadQuote" onclick="window.location.reload(1);" >Show another quote</button>
   </div>
 </body>
 </html>
