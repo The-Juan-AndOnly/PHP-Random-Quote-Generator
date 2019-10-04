@@ -3,9 +3,6 @@
 // PHP - Random Quote Generator
 
 // Create the Multidimensional array of quote elements and name it quotes
-
-
-// Each inner array element should be an associative array
 $quotes[] = [
   'quote'=> 'Talk is cheap. Show me the code.',
   'source'=> 'Linus Torvalds',
@@ -13,7 +10,7 @@ $quotes[] = [
   'year'=> '2001',
   'tag'=> 'inspirational'
 ];
-// Each inner array element should be an associative array
+
 $quotes[] = [
   'quote'=> 'You miss 100% of the shots you don’t take',
   'source'=> 'Wayne Gretzky',
@@ -21,7 +18,7 @@ $quotes[] = [
   'year'=> '',
   'tag'=> 'inspirational'
 ];
-// Each inner array element should be an associative array
+
 $quotes[] = [
   'quote'=> 'Debt is dumb, cash is King',
   'source'=> 'Dave Ramsey',
@@ -29,7 +26,7 @@ $quotes[] = [
   'year'=> null,
   'tag'=> 'financial'
 ];
-// Each inner array element should be an associative array
+
 $quotes[] = [
   'quote'=> 'Life is 10% what happens to me and 90% of how I react to it',
   'source'=> 'Charles Swindoll',
@@ -37,7 +34,7 @@ $quotes[] = [
   'year'=> null,
   'tag'=> 'inspirational'
 ];
-// Each inner array element should be an associative array
+
 $quotes[] = [
   'quote'=> "I'm back and done did it again",
   'source'=> 'Joe Santos Garcia',
@@ -45,7 +42,7 @@ $quotes[] = [
   'year'=> '',
   'tag'=> 'humor'
 ];
-// Each inner array element should be an associative array
+
 $quotes[] = [
   'quote'=> 'If you fail to plan, you are planning to fail!',
   'source'=> 'Benjamin Franklin',
@@ -53,7 +50,7 @@ $quotes[] = [
   'year'=> '',
   'tag'=> 'inspirational'
 ];
-// Each inner array element should be an associative array
+
 $quotes[] = [
   'quote'=> 'Those who cannot remember the past are condemned to repeat it.',
   'source'=> 'George Santayana',
@@ -61,7 +58,7 @@ $quotes[] = [
   'year'=> 1905,
   'tag'=> 'philosophy'
 ];
-// Each inner array element should be an associative array
+
 $quotes[] = [
   'quote'=> 'You better check yourself before you wreck yourself.',
   'source'=> 'Ice Cube',
@@ -96,7 +93,7 @@ function printQuote(){
   }
   $htmlString.='</p>';
   // Generates a random value for hue and then sets the body background to the "hsl" value
-  echo '<body style="background-color:hsl('.mt_rand(0,360).',75%,30%)">';
+  echo '<body style="background-color:hsl('. mt_rand(0,360) .',75%,30%)">';
   return $htmlString;
 }
   
