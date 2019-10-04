@@ -12,7 +12,7 @@ include 'inc/functions.php';
   <link rel="stylesheet" href="css/styles.css">
   <script>
 
-    const timer = setInterval(() => {
+    setInterval(() => {
       window.location.reload(1);
     }, 7500);
 
@@ -23,7 +23,7 @@ include 'inc/functions.php';
     <div id="quote-box">
       <?php echo printQuote();?>
     </div>
-    <button id="loadQuote" onclick="window.location.reload(1);" >Show another quote</button>
+    <button id="loadQuote" onclick="window.location.reload(1)" >Show another quote</button>
   </div>
 </body>
 </html>
